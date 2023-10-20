@@ -84,13 +84,15 @@ class PhotoManagerPlugin(
             return
         }
 
-        /*
+
         if (Methods.isPermissionMethod(method)) {
             // The method is used to request permission.
-            handlePermissionMethod(resultHandler)
+            // handlePermissionMethod(resultHandler)
+
+            handleOtherMethods(resultHandler)
             return
         }
-        */
+
 
         if (ignorePermissionCheck) {
             handleOtherMethods(resultHandler)
