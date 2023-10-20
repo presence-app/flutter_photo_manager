@@ -71,7 +71,7 @@ class PhotoManagerPlugin(
 
     private val photoManager = PhotoManager(applicationContext)
 
-    private var ignorePermissionCheck = false
+    private var ignorePermissionCheck = true
 
     override fun onMethodCall(call: MethodCall, result: MethodChannel.Result) {
         val resultHandler = ResultHandler(result, call)
@@ -84,12 +84,13 @@ class PhotoManagerPlugin(
             return
         }
 
-
+        /*
         if (Methods.isPermissionMethod(method)) {
             // The method is used to request permission.
             handlePermissionMethod(resultHandler)
             return
         }
+        */
 
         if (ignorePermissionCheck) {
             handleOtherMethods(resultHandler)

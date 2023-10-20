@@ -85,11 +85,12 @@ class _SimpleExamplePageState extends State<_SimpleExamplePage> {
       _isLoading = true;
     });
     // Request permissions.
-    final PermissionState ps = await PhotoManager.requestPermissionExtend();
+    //final PermissionState ps = await PhotoManager.requestPermissionExtend();
     if (!mounted) {
       return;
     }
     // Further requests can be only proceed with authorized or limited.
+    /*
     if (!ps.hasAccess) {
       setState(() {
         _isLoading = false;
@@ -97,6 +98,8 @@ class _SimpleExamplePageState extends State<_SimpleExamplePage> {
       showToast('Permission is not accessible.');
       return;
     }
+    */
+
     // Obtain assets using the path entity.
     final List<AssetPathEntity> paths = await PhotoManager.getAssetPathList(
       onlyAll: true,
