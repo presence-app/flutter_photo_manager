@@ -274,7 +274,7 @@ class PhotoManagerPlugin with BasePlugin, IosPlugin, AndroidPlugin {
         'title': title,
         'desc': desc ?? '',
         'relativePath': relativePath,
-        ...onlyAddPermission,
+        //...onlyAddPermission,
       },
     );
     if (result == null) {
@@ -304,7 +304,7 @@ class PhotoManagerPlugin with BasePlugin, IosPlugin, AndroidPlugin {
         'title': title,
         'desc': desc ?? '',
         'relativePath': relativePath,
-        ...onlyAddPermission,
+        //...onlyAddPermission,
       },
     );
     if (result == null) {
@@ -333,7 +333,7 @@ class PhotoManagerPlugin with BasePlugin, IosPlugin, AndroidPlugin {
         'title': title,
         'desc': desc ?? '',
         'relativePath': relativePath,
-        ...onlyAddPermission,
+        //...onlyAddPermission,
       },
     );
     if (result == null) {
@@ -368,7 +368,7 @@ class PhotoManagerPlugin with BasePlugin, IosPlugin, AndroidPlugin {
         'title': title,
         'desc': desc ?? '',
         'relativePath': relativePath,
-        ...onlyAddPermission,
+        //...onlyAddPermission,
       },
     );
     if (result == null) {
