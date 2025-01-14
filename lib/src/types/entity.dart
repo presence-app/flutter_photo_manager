@@ -181,6 +181,7 @@ class AssetPathEntity {
   Future<List<AssetEntity>> getAssetListPaged({
     required int page,
     required int size,
+    RequestType? requestType,
   }) {
     assert(albumType == 1, 'Only album can request for assets.');
     assert(size > 0, 'Page size must be greater than 0.');
@@ -198,7 +199,7 @@ class AssetPathEntity {
       id,
       page: page,
       size: size,
-      type: type,
+      type: requestType ?? type,
       optionGroup: filterOption,
     );
   }
